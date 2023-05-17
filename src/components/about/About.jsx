@@ -24,7 +24,7 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>2 Years Working</small>
             </article>
 
             <article className='about__card'>
@@ -35,12 +35,12 @@ const About = () => {
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <h5>Github Repo's</h5>
+              <small>100+ Completed</small>
             </article>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum consequatur, repudiandae nemo debitis rerum dicta repellendus voluptatum similique accusamus dolorum voluptatibus optio harum eaque aliquid ab aut? Qui, aperiam vitae.</p>
+          <p>I am a full-stack engineer based in Northwest London with a bachelor’s in computer science. Since graduating, through working at ATOS and KPMG I’ve been able to learn new skills and enhance my existing skills through hands-on experience with new tools and techniques. I am very eager to work with other development platforms and are more than capable enough of picking up new languages and techniques in a timely manner.</p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
 

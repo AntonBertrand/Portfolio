@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio.jsx'
 import Testimonials from './components/testimonials/Testimonials.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
+import Education from './components/education/Education.jsx'
 
 
 const App = () => {
@@ -17,9 +18,8 @@ const App = () => {
        <Nav/>
        <About/>
        <Experience/>
-       <Services/>
+       <Education/>
        <Portfolio/>
-       <Testimonials/>
        <Contact/>
        <Footer/>
     </>

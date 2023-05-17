@@ -1,0 +1,48 @@
+.education__container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+}
+
+
+.certificate__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.certificate__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+img {
+    width: 10px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ============ */
+
+@media screen and (max-width: 1024px) {
+
+    .education__container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ============ */
+
+@media screen and (max-width: 600px) {
+
+
+    
+}
+

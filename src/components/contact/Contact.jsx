@@ -1,8 +1,9 @@
 import React from 'react'
 import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
-import {BsWhatsapp} from 'react-icons/bs'
+import {TfiNotepad} from 'react-icons/tfi'
 import {BsLinkedin} from 'react-icons/bs'
+import CV from '../../assets/cv.pdf'
 import { useForm, ValidationError } from '@formspree/react';
 
 
@@ -80,9 +81,9 @@ function App() {
           </article>
 
           <article className='contact__option'>
-            <BsWhatsapp className='contact__option-icon'/>
-            <h4>WhatsApp</h4>
-            <a href="https://api.whatsapp.com/send?phone+447711289437" target='_blank'>Send a message</a>
+            <TfiNotepad className='contact__option-icon'/>
+            <h4>CV</h4>
+            <a href={CV} download>Download</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
