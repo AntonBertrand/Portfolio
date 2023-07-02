@@ -5,6 +5,7 @@ import IMG3 from '../assets/hoboarena.png'
 import IMG4 from '../assets/portfolio7.png'
 import IMG5 from '../assets/portfolio5.png'
 import IMG6 from '../assets/portfolio6.jpg'
+import IMG7 from '../assets/myDiary.png'
 
 export default {
     "data": [
@@ -37,12 +38,22 @@ export default {
               },
               {
                 id: 4,
+                image: IMG7,
+                category: "Frontend",
+                title: 'MyDiary',
+                desc:'MyDiary is a web application which allows users to create diary entries which they can use to capture their thoughts, moods, memories and anything else they would like to document. This is a full stack application built using the MERN stack. Users are able to signup and login to their own private dashboard in which they can view all their diary entries or search for specific ones.',
+                github: 'https://github.com/AntonBertrand/Diary-App',
+                demo: 'https://google.com'
+              },
+              {
+                id: 5,
                 image: IMG1,
                 category: "Frontend",
                 title: 'Doughnut Clicker',
                 desc:'Hobo Arena is a text-based roleplaying game with GUI inspired by the browser game HoboWars. You play as a hobo and can pick a fight against enemies for coins and experience, as well as the ability to scavenge the city for coins and items. Earned coins can be spent in the shop on healing apples and better weapons. You can submit your final score to the Highscores list in which other players will compete for the highest score.',
                 github: 'https://google.com',
                 demo: 'https://google.com'
-              }
+              },
+
         ]
     }
