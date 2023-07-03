@@ -1,8 +1,11 @@
 import React from 'react'
 import './portfolio.css'
 import projectData from '../projectData'
+import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
+
+  const data = projectData.data.slice(0, 4);
 
   return (
     <section id='portfolio'>
@@ -12,7 +15,7 @@ const Portfolio = () => {
       <div className="portfolio__container">
 
         {
-          projectData.data.map(({id, image, title, desc, github, demo}) => {
+          data.map(({id, image, title, desc, github, demo}) => {
             return (
               <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -28,9 +31,13 @@ const Portfolio = () => {
             </article>
             )
           })
-        }
-        
+        }        
       </div>
+
+      <div className="all__projects">
+        <Link to="/projects" className="all__projects__btn">View All Projects</Link>
+      </div>
+
     </section>
   )
 }

@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home/Home.jsx';
-import { Portfolio } from './pages/Portfolio/Portfolio.jsx'
+import { Projects } from './pages/Projects/Projects.jsx';
 
 const App = () => {
   return (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/projects" element={<Projects/>} />
         </Routes>
       </BrowserRouter>
   )
