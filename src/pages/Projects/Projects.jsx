@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import projectData from '../../components/projectData'
 import './projects.css'
+import { Link } from 'react-router-dom';
 
 export const Projects = () => {
 
@@ -36,14 +37,15 @@ export const Projects = () => {
 
   return (
     <section id='projects'>
-    <h5>My Recent Work</h5>
+    <h5>All Of My Personal Projects</h5>
     <h2>Portfolio</h2>
 
         <ul className="project__categories">
+            <Link to="/" ><li>Back To Home</li> </Link>
             <li onClick={() => setCategory("all")}>All Projects</li>
-            <li onClick={() => setCategory("fs")}>Full Stack</li>
-            <li onClick={() => fetchProjects("f")}>Frontend</li>
-            <li onClick={() => setCategory("b")}>Backend</li>
+            <li onClick={() => setCategory("Full Stack")}>Full Stack</li>
+            <li onClick={() => fetchProjects("Frontend")}>Frontend</li>
+            <li onClick={() => setCategory("Backend")}>Backend</li>
         </ul>
 
     <div className="projects__container">
@@ -53,13 +55,17 @@ export const Projects = () => {
 
           return (
             <article key={project.id} className="projects__item" >
-            <h3>{project.title}</h3>  
+              <div className="project__header">
+              <h3>{project.title}</h3>  
+              <div className="project__category">{project.category}</div>
+              </div>
             <div className="projects__item-image">
               <img src={project.image} alt={project.title} />
             </div>
+            <small>{project.desc}</small>
             <div className="projects__item-cta">
-            <a href={project.github} className='btn' target='_blank'>Github</a>
-            <a href={project.demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href={project.github} className='project__button' target='_blank'>Github</a>
+            <a href={project.demo} className='project__button' target='_blank'>Live Demo</a>
             </div>
           </article>
           )

@@ -3,6 +3,12 @@
     flex-direction: column;
 }
 
+.project__header {
+    display:  flex;
+    align-self: center;
+    gap: 1rem;
+}
+
 .project__categories{
     width: 75%;
     height: 5rem;
@@ -38,7 +44,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 2.5rem;
     margin: auto;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .projects__item {
@@ -54,4 +60,35 @@
 .projects__item  h3 {
     align-self: center;
     margin-bottom: 0.5rem;
+}
+
+.project__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 35px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+small {
+    margin-bottom: 1.5rem;
+}
+
+.project__category {
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    background: rgb(20, 51, 190);
+    color: white;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.projects__item-cta {
+    display: flex;
 }
