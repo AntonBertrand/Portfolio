@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import projectData from '../../components/projectData'
 import './projects.css'
 import { Link } from 'react-router-dom';
+import {AiOutlineHome} from 'react-icons/ai'
 
 export const Projects = () => {
 
@@ -41,7 +42,10 @@ export const Projects = () => {
     <h2>Portfolio</h2>
 
         <ul className="project__categories">
-            <Link to="/" ><li>Back To Home</li> </Link>
+            <Link to="/" >
+              <li className='desktop-home'>Back To Home</li>
+              <div className="mobile-home-bg"><AiOutlineHome className='mobile-home'/></div>
+             </Link>
             <li onClick={() => setCategory("all")}>All Projects</li>
             <li onClick={() => setCategory("Full Stack")}>Full Stack</li>
             <li onClick={() => fetchProjects("Frontend")}>Frontend</li>
@@ -65,7 +69,7 @@ export const Projects = () => {
             <small>{project.desc}</small>
             <div className="projects__item-cta">
             <a href={project.github} className='project__button' target='_blank'>Github</a>
-            <a href={project.demo} className='project__button' target='_blank'>Live Demo</a>
+            {project.demo && <a href={project.demo} className='project__button' target='_blank'>Live Demo</a>}
             </div>
           </article>
           )
