@@ -4,7 +4,6 @@ import IMG2 from '../assets/qrteach2.png'
 import IMG3 from '../assets/hoboarena.png'
 import IMG4 from '../assets/portfolio7.png'
 import IMG5 from '../assets/whatson.png'
-import IMG6 from '../assets/portfolio6.jpg'
 import IMG7 from '../assets/myDiary.png'
 import IMG8 from '../assets/Recipe.png'
 import IMG9 from '../assets/admindash.png'
@@ -12,6 +11,7 @@ import IMG10 from '../assets/shortly.png'
 import IMG11 from '../assets/bookstore.png'
 import IMG12 from '../assets/socialmedia.png'
 import IMG13 from '../assets/tasktracker.png'
+import IMG14 from '../assets/quizapp.png'
 
 export default {
     "data": [
@@ -31,7 +31,7 @@ export default {
                 title: 'MyDiary',
                 desc:'MyDiary is a web application which allows users to create diary entries which they can use to capture their thoughts, moods, memories and anything else they would like to document. This is a full stack application built using the MERN stack. Users are able to signup and login to their own private dashboard in which they can view all their diary entries or search for specific ones.',
                 github: 'https://github.com/AntonBertrand/Diary-App',
-                demo: 'https://google.com'
+                demo: 'https://diary-app-35k5.onrender.com/'
               },
               {
                 id: 3,
@@ -122,6 +122,14 @@ export default {
                 desc:'Hobo Arena is a text-based roleplaying game with GUI inspired by the browser game HoboWars. You play as a hobo and can pick a fight against enemies for coins and experience, as well as the ability to scavenge the city for coins and items. Earned coins can be spent in the shop on healing apples and better weapons. You can submit your final score to the Highscores list in which other players will compete for the highest score.',
                 github: 'https://github.com/AntonBertrand/HoboArena',
                 demo: 'https://bookstore.antonbertrand.com/'
+              },
+              {
+                id: 15,
+                image: IMG14,
+                category: "Backend",
+                title: 'QuizApp',
+                desc:'QuizApp is a Command-Line Quiz Application which allows users to create their own quizzes which they can then play afterwards or play pre-made quizzes retrieved from an API.',
+                github: 'https://github.com/AntonBertrand/QuizApp',
               },
 
         ]
