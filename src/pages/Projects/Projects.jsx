@@ -66,6 +66,9 @@ export const Projects = () => {
             <div className="projects__item-image">
               <img src={project.image} alt={project.title} />
             </div>
+            <div className="project__tech__container">
+              { project.tech && project.tech.map((item) => <div className='project__tech'> {item} </div>)}
+            </div>
             <small>{project.desc}</small>
             <div className="projects__item-cta">
             <a href={project.github} className='project__button' target='_blank'>Github</a>

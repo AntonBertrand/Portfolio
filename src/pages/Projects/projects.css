@@ -98,6 +98,21 @@ small {
     display: none;
 }
 
+.project__tech__container {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.project__tech {
+    background: rgb(20, 51, 190);
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+
 @media screen and (max-width: 1500px) {
 
     .projects__container {
@@ -123,17 +138,28 @@ small {
 }
 
 @media screen and (max-width: 825px) {
+    
+
+    .projects__item {
+        width: 90%;
+        margin: auto;
+    }
 
     .projects__container {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 2.5rem;
         margin: auto;
-        padding: 3rem;
+        padding: 0;
+    }
+
+    .project__categories {
+        width: 90%;
+        margin-bottom: 2rem;
     }
 
     .project__categories li{
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .mobile-home {

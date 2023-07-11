@@ -15,15 +15,17 @@ const Portfolio = () => {
       <div className="portfolio__container">
 
         {
-          data.map(({id, image, title, desc, github, demo}) => {
+          data.map(({id, image, title, desc, github, demo, tech}) => {
             return (
               <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
+              <div className="project__tech__container">
+              { tech && tech.map((item) => <div className='project__tech'> {item} </div>)}
+            </div>
               <small>{desc}</small>
-    
               <div className="portfolio__item-cta">
               <a href={github} className='btn' target='_blank'>Github</a>
               { demo && <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>}
