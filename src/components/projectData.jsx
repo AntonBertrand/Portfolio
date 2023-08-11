@@ -61,8 +61,7 @@ export default {
                 category: "Frontend",
                 title: 'Doughnut Clicker',
                 desc:'Doughnut Clicker is a web-based idle clicker game, inspired by the well-known Cookie Clicker games. Players click on a doughnut to earn points which can be spent on a variety of upgrades such as a doughnut printer which will provide players with a passive income of points, upgraded pointers which will allow players to earn more points, and the ability to customize their own doughnut.',
-                github: 'https://google.com',
-                demo: 'https://google.com',
+                github: 'https://github.com/AntonBertrand/DoughnutClicker',
                 tech: ["HTML", "CSS", "Javascript"]
               },
               {
