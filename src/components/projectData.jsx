@@ -12,21 +12,32 @@ import IMG11 from '../assets/bookstore.png'
 import IMG12 from '../assets/socialmedia.png'
 import IMG13 from '../assets/tasktracker.png'
 import IMG14 from '../assets/quizapp.png'
+import IMG15 from '../assets/ShopCart1.png'
 
 export default {
     "data": [
             {
                 id: 1,
+                image: IMG15,
+                category: "Full Stack",
+                title: 'ShopCart',
+                desc:`ShopCart is a full stack web application which allows users to create an account, view different headphones and add them to their shopping cart. When satisfied with their shopping basket, users can proceed to checkout where they're asked for payment details and shipping information. Upon validation, an order is created and stored in the database. Users can view their order history by navigating to their accounts profile page.`,
+                github: 'https://github.com/AntonBertrand/Ecommerce',
+                demo: `https://ecommerce-frontend-blpu.onrender.com/`,
+                tech: ["React", "Express", "Node", "MongoDB", "TypeScript"]
+            },      
+            {
+                id: 2,
                 image: IMG4,
                 category: "Full Stack",
                 title: 'VanquisBooking',
-                desc: "This is a simplified Booking.com clone I've named VanquisBooking. This is a full stack application (Frontend & Backend) I created to practice development using the MERN stack. Users can register and login to view properties filtered by destination, date range, visitors, and room quantity. Specific rooms can be booked at each property and will be unavailable to others for the dates booked for.",
+                desc: "This is a simplified Booking.com clone I've named VanquisBooking. This is a full stack application I created to practice development using the MERN stack. Users can register and login to view properties filtered by destination, date range, visitors, and room quantity. Specific rooms can be booked at each property and will be unavailable to others for the dates booked for.",
                 github: 'https://github.com/AntonBertrand/Booking-App',
                 demo: 'https://booking-app-frontend-8uip.onrender.com/',
                 tech: ["React", "Express", "Node", "MongoDB"]
               },
               {
-                id: 2,
+                id: 3,
                 image: IMG7,
                 category: "Full Stack",
                 title: 'MyDiary',
@@ -36,7 +47,7 @@ export default {
                 tech: ["React", "Express", "Node", "MongoDB"]
               },
               {
-                id: 3,
+                id: 4,
                 image: IMG5,
                 category: "Full Stack",
                 title: 'WhatsOn',
@@ -45,8 +56,9 @@ export default {
                 demo: 'https://www.youtube.com/watch?v=WcMdWl8wv2M',
                 tech: ["Java", "Firebase", "Android Studio"]
               },
+
               {
-                id: 4,
+                id: 5,
                 image: IMG2,
                 category: "Full Stack",
                 title: 'QRTeach',
@@ -56,7 +68,7 @@ export default {
               },
 
               {
-                id: 5,
+                id: 6,
                 image: IMG1,
                 category: "Frontend",
                 title: 'Doughnut Clicker',
@@ -65,7 +77,7 @@ export default {
                 tech: ["HTML", "CSS", "Javascript"]
               },
               {
-                id: 6,
+                id: 7,
                 image: IMG8,
                 category: "Frontend",
                 title: 'Recipe App',
